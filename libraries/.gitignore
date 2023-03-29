@@ -1,0 +1,4 @@
+# Zip Files
+*.zip
+# Backup files
+*.bak
