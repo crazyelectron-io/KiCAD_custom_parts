@@ -1,6 +1,6 @@
 # Customized components for KiCAD 7.0
 
-This re contains all components that I customized for use in my projects.
+This repository contains all components that I created or customized for use in my projects.
 These components are the actual products bought and used, having the correct footprint.
 I also like to customize most symbols a bit to make the pin layout more schematic-friendly as I try to draw the actual wires (if it does not get mixed with multiple other wires) in the circuit diagrams - Elektuur/Elektor style...
 
@@ -28,7 +28,7 @@ git submodule update
 
 To use the updated libraries after a custom part is added or updated, just run `git submodule update` to retrieve the changed libraries.
 
-# Maintaining the custom parts library
+## Maintaining the custom parts library
 
 The workflow to add or update components in this repository is:
 
@@ -36,7 +36,7 @@ The workflow to add or update components in this repository is:
 2. Add/change the required parts in the libraries (see below for details).
 3. Commit the changes to the repository and push to GitHub.
 
-## Add a schematic symbol based on an existing symbol in another library
+### Add a schematic symbol based on an existing symbol in another library
 
 In many cases I modify the symbols to make the pin ordering more function grouped.
 I also like to know for sure which symbol I use so I can even reproduce it years later.
@@ -49,11 +49,11 @@ To use an existing symbol in another library as starting point for creating a ne
 5. To use the upated library in projects, commit the change to the repository.
 6. Run `git submodule update` in the project that needs the symbol and add the library as project library.
 
-## Add a new schematic symbol
+### Add a new schematic symbol
 
 The workflow for adding a new symbol is similar, except that we don't copy a symbol from another librarye but start with a blank canvas.
 
-## Add a footprint based on an existing footprint in another library
+### Add a footprint based on an existing footprint in another library
 
 Just like with schematic symbols, I like to validate footprints to ensure they match with the components I buy.
 The workflow is similar to schematic symbols:
@@ -65,6 +65,6 @@ The workflow is similar to schematic symbols:
 5. To use the upated library in projects, commit the change to the repository.
 6. Run `git submodule update` in the project that needs the footprint and add the library as project library.
 
-## Add a 3D symbol
+### Add a 3D symbol
 
 [ # TODO: ]
